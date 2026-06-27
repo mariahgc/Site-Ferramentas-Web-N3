@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lumina Tech</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/imagens/logo-site.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <!-- inicio -->
+    <header class="header">
+        <div class="logo">
+            Lumina<span>Tech</span>
+
+            <button onclick="toggleDarkMode()" class="dark-btn">
+                <i class="fa-solid fa-sun"></i>
+            </button>
+
+        </div>
+        <nav class="menu">
+            <a href="#inicio">Início</a>
+            <a href="#beneficios">Benefícios</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#depoimentos">Depoimentos</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="principal-texto"></div>
+        <div class="principal">
+            <h1>Lumina Tech</h1>
+            <p>
+                Economize até 95% na sua conta de energia.
+                Tecnologia solar inteligente com monitoramento
+                completo pelo aplicativo.
+            </p>
+            <div class="botoes-principal">
+                <a href="#contato"><button class="botao1">Solicitar orçamento</button></a>
+                <a href="#cards"> <button class="botao2">Explore <i class="fa-solid fa-arrow-down"></i></button> </a>
+            </div>
+            <div class="calculadora">
+                <h3>Simule sua economia</h3>
+                <input type="number" id="conta" placeholder="Valor da sua conta de luz">
+                <button onclick="calcularROI()">Calcular</button>
+                <p id="resultado-roi"></p>
+            </div>
+    </section>
+
+    <!-- beneficiios-->
+
+    <section id="beneficios" class="beneficios">
+
+        <h2>Por que escolher a Lumina Tech?</h2>
+        <div class="cards">
+            <article class="card">
+                <i class="fa-solid fa-solar-panel"></i>
+                <h3>Alta Eficiência</h3>
+                <p>
+                    Painéis solares inteligentes desenvolvidos com tecnologia
+                    de ponta para gerar o máximo desempenho.
+                </p>
+            </article>
+            <article class="card">
+                <i class="fa-solid fa-bolt"></i>
+                <h3>Economia Garantida</h3>
+                <p>
+                    Reduza drasticamente sua conta de energia e tenha retorno
+                    sobre o investimento em poucos anos.
+                </p>
+
+            </article>
+            <article class="card">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <h3>Controle por Aplicativo</h3>
+                <p>
+                    Acompanhe toda a produção de energia diretamente pelo
+                    celular.
+                </p>
+            </article>
+        </div>
+    </section>
+
+    <!--Sobre-->
+
+    <section class="about" id="sobre">
+        <div class="sobre-container">
+            <div class="imagem-sobre">
+                <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1200&auto=format&fit=crop"
+                    alt="Painéis solares">
+            </div>
+            <div class="texto-sobre">
+                <h2>Energia solar com tecnologia de ponta</h2>
+                <p>A Lumina Tech combina inovação, automação e eficiência energética para transformar a forma como
+                    você consome energia.</p>
+            </div>
+            <div class="imagem-sobre">
+                <img src="https://i.pinimg.com/736x/76/84/7b/76847bb5fff0b961523c11a585380e09.jpg"
+                    alt="Painéis solares">
+            </div>
+        </div>
+    </section>
+
+    <!--depoimentos-->
+
+    <section class="depoimentos-container" id="depoimentos">
+        <div class="titulo-depoimento">
+            <span class="citacao">“</span>
+            <h2>Avaliações:<br>Você não está sozinho</h2>
+            <span class="citacao">“</span>
+        </div>
+        <div class="depoimento-card">
+            <p>Melhor investimento que fiz para minha empresa, com ótimos profissionais.</p>
+            <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="user">
+                <img src="https://i.pinimg.com/736x/3d/93/a5/3d93a5eaac7de157c7a4ab2dff25ecb2.jpg" alt="">
+                <div>
+                    <h4>Fulano</h4>
+                    <span>1 semana atrás</span>
+                </div>
+            </div>
+        </div>
+        <div class="depoimento-card">
+            <p>O atendimento ao cliente é excelente. Vale super apena, os gastos diminuem muito.</p>
+            <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="user">
+                <img src="https://i.pinimg.com/1200x/98/9d/64/989d646c0f3bf8f5d0229484ede64751.jpg" alt="">
+                <div>
+                    <h4>Fulana</h4>
+                    <span>10 dias atrás</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--contato-->
+
+    <section class="cards-section" id="cards">
+        <h1 class="titulo-card">GARANTA A SUA</h1>
+        <div class="container-card">
+            <div class="card-compra">
+                <img src="https://www.neosolar.com.br/media/catalog/product/cache/207e23213cf636ccdef205098cf3c8a3/z/t/ztp_-_100mi_1.jpg"
+                    alt="">
+                <h1>Placa Solar</h1>
+                <p> Fotovoltaica 100Wp Monocristalina - ZTROON - ZTP-100MI</p>
+                <div class="valor">R$ 189,00</div>
+                <div class="botao-card">COMPRAR</div>
+            </div>
+            <div class="card-compra">
+                <img src="https://www.neosolar.com.br/media/catalog/product/cache/207e23213cf636ccdef205098cf3c8a3/z/t/ztp_-_100mi_1.jpg"
+                    alt="">
+                <h1>Placa Solar</h1>
+                <p> Fotovoltaica 100Wp Monocristalina - ZTROON - ZTP-100MI</p>
+                <div class="valor">R$ 189,00</div>
+                <div class="botao-card">COMPRAR</div>
+            </div>
+            <div class="card-compra">
+                <img src="https://www.neosolar.com.br/media/catalog/product/cache/207e23213cf636ccdef205098cf3c8a3/z/t/ztp_-_100mi_1.jpg"
+                    alt="">
+                <h1>Placa Solar</h1>
+                <p> Fotovoltaica 100Wp Monocristalina - ZTROON - ZTP-100MI</p>
+                <div class="valor">R$ 189,00</div>
+                <div class="botao-card">COMPRAR</div>
+            </div>
+            <div class="card-compra">
+                <img src="https://www.neosolar.com.br/media/catalog/product/cache/207e23213cf636ccdef205098cf3c8a3/z/t/ztp_-_100mi_1.jpg"
+                    alt="">
+                <h1>Placa Solar</h1>
+                <p> Fotovoltaica 100Wp Monocristalina - ZTROON - ZTP-100MI</p>
+                <div class="valor">R$ 189,00</div>
+                <div class="botao-card">COMPRAR</div>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contato">
+        <div class="contact-container">
+            <div class="contact-texto">
+                <h2>Solicite uma consultoria gratuita</h2>
+                <p> Preencha o formulário e nossa equipe entrará em contato</p>
+            </div>
+            <form class="contact-form" onsubmit="validarForm(event)">
+                <input type="text" placeholder="Seu nome">
+                <input type="email" placeholder="Seu e-mail">
+                <input type="tel" placeholder="Telefone">
+                <textarea placeholder="Conte sobre seu projeto"></textarea>
+                <button type="submit">Solicitar orçamento</button>
+            </form>
+        </div>
+    </section>
+
+    <!--FAQ-->
+
+    <section class="faq">
+        <div class="faq1">
+            <h2>Dúvidas frequentes!!!</h2>
+        </div>
+        <div class="faq2">
+            <div class="item">
+                <button onclick="toggleFaq(this)">O que é energia solar?</button>
+                <div class="panel">É a liberdade de produzir sua própria eletricidade usando a luz do sol. Uma fonte
+                    limpa, renovável e inesgotável que transforma o telhado da sua casa ou empresa em uma verdadeira
+                    economia.</div>
+            </div>
+
+            <div class="item">
+                <button onclick="toggleFaq(this)">Vale a pena?</button>
+                <div class="panel">Economia Imediata: Corte de até 95% no valor da sua conta de luz. Depois de pago,
+                    você gera energia gratuita por mais de 20 anos. Proteção do seu Dinheiro: Você fica imune aos
+                    aumentos de tarifas e bandeiras escassas da distribuidora e o seu imóvel é valorizado imediatamente
+                    no mercado imobiliário.</div>
+            </div>
+
+            <div class="item">
+                <button onclick="toggleFaq(this)">Como funciona?</button>
+                <div class="panel">Captação: Os painéis no seu telhado recebem a luz do sol e a transformam em energia
+                    limpa. Conversão: O inversor solar adapta essa energia para o formato que sua casa já usa. Consumo e
+                    Crédito: Você abastece seus aparelhos e, se sobrar energia, ela vai para a rede pública e vira
+                    créditos para você usar depois.</div>
+            </div>
+
+        </div>
+    </section>
+    <!--footer-->
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div>
+                <h3>Lumina Tech</h3>
+                <p>Tecnologia e sustentabilidade para transformar o futuro da energia</p>
+            </div>
+            <div>
+                <h4>Contato</h4>
+                <p>(47) 99999-9999</p>
+                <p>contato@luminatech.com</p>
+            </div>
+        </div>
+        <div class="footer-botao">© 2026 Lumina Tech</div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>
