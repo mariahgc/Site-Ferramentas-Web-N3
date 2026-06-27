@@ -25,7 +25,7 @@ O projeto contém:
 
 ## Como executar o projeto
 
-1. Faça o download ou clone o repositório:
+1. Faça o download ou clone o repositório.
 2. Abra o arquivo index.html no navegador.
 
 ## Desenvolvedor
