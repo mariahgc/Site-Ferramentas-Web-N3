@@ -5,7 +5,7 @@ function calcularROI() {
             "Digite um valor válido.";
         return;
     }
-    let economia = conta * 0.85;
+    let economia = conta * 0.95;
     document.getElementById("resultado-roi").innerText =
         `Economia estimada: R$ ${economia.toFixed(2)} por mês`;
 }
